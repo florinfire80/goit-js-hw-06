@@ -1,0 +1,38 @@
+/* stilizare cu flexbox */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery li {
+  flex: 1 0 30%;
+  margin: 10px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* stilizare cu grid
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery li {
+  margin: 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+*/
