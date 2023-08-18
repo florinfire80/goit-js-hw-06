@@ -1,27 +1,27 @@
-// Select the counter elements
+// Selecteaza elementele contorului
 const decrementButton = document.querySelector('[data-action="decrement"]');
 const incrementButton = document.querySelector('[data-action="increment"]');
 const counterValueSpan = document.querySelector("#value");
 
-// Initialize counterValue
+// Initializeaza valoarea counterValue
 let counterValue = 0;
 
-// Function to update the counter value on the interface
+// Functia de update pentru counter value pe interfata
 function updateCounterValue() {
   counterValueSpan.textContent = counterValue;
 }
 
-// Event listener for decrement button
+// Event listener pentru buton decrement
 decrementButton.addEventListener("click", () => {
   counterValue--;
   updateCounterValue();
 });
 
-// Event listener for increment button
+// Event listener pentru buton increment
 incrementButton.addEventListener("click", () => {
   counterValue++;
   updateCounterValue();
 });
 
-// Initial update of the counter value on the interface
+// Actualizarea inițială a valorii contorului de pe interfață
 updateCounterValue();

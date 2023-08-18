@@ -12,10 +12,10 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-// Select the ul.gallery element
+// Selecteaza elementul ul.gallery
 const galleryList = document.querySelector(".gallery");
 
-// Create an HTML string for the gallery
+// Creaza un string HTML la gallery
 const galleryHTML = images
   .map(
     (image) => `
@@ -26,5 +26,5 @@ const galleryHTML = images
   )
   .join("");
 
-// Insert the gallery HTML into the ul.gallery element
+// Insereaza HTML-ul galeriei în elementul ul.gallery
 galleryList.insertAdjacentHTML("beforeend", galleryHTML);

@@ -7,20 +7,20 @@ const ingredients = [
   "Condiments",
 ];
 
-// Select the ul#ingredients element
+// Selecteaza elementul ul#ingredients
 const ingredientsList = document.querySelector("#ingredients");
 
-// Loop through each ingredient and create li elements
+// Parcurge fiecare ingredient și creaza elemente li
 ingredients.forEach((ingredient) => {
-  // Create a new li element
+  // Creaza un nou element li
   const listItem = document.createElement("li");
 
-  // Add the "item" class to the li element
+  // Adauga clasa "item" la elementul li
   listItem.classList.add("item");
 
-  // Set the text content to the ingredient name
+  // Seteaza continutul text la numele ingredientului
   listItem.textContent = ingredient;
 
-  // Append the li element to the ul#ingredients
+  // Adauga elementul li la ul#ingredients
   ingredientsList.appendChild(listItem);
 });
